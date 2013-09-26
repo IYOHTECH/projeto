@@ -4,24 +4,46 @@ import java.util.Date;
 
 public class Agenda {
 
-	private Curso curso;
-	private Modulo modulo;
+	private Long id;
+	private int curso;
+	private int modulo;
 	private String local;
 	private Date data;
 	private String Bairro;
 	private String endereco;
 	private String estado;
+	private int realizado;
 	
-	public Curso getCurso() {
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public int getRealizado() {
+		return realizado;
+	}
+	public void setRealizado(int realizado) {
+		this.realizado = realizado;
+	}
+	private int cidade;
+
+	public int getCurso() {
 		return curso;
 	}
-	public void setCurso(Curso curso) {
+	public void setCurso(int curso) {
 		this.curso = curso;
 	}
-	public Modulo getModulo() {
+	public int getCidade() {
+		return cidade;
+	}
+	public void setCidade(int cidade) {
+		this.cidade = cidade;
+	}
+	public int getModulo() {
 		return modulo;
 	}
-	public void setModulo(Modulo modulo) {
+	public void setModulo(int modulo) {
 		this.modulo = modulo;
 	}
 	public String getLocal() {
@@ -54,4 +76,6 @@ public class Agenda {
 	public void setEstado(String estado) {
 		this.estado = estado;
 	}
+	
+	
 }

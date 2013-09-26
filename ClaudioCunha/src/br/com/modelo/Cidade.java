@@ -4,7 +4,14 @@ public class Cidade {
 
 	private int id;
 	private String cidade;
+	private String sigla;
 	
+	public String getSigla() {
+		return sigla;
+	}
+	public void setSigla(String sigla) {
+		this.sigla = sigla;
+	}
 	public int getId() {
 		return id;
 	}

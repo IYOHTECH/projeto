@@ -5,7 +5,21 @@ public class Modulo {
 	private String nome;
 	private String descricao;
 	private Long id;
+	private Double valor;
+	private Long curso;
 	
+	public Long getCurso() {
+		return curso;
+	}
+	public void setCurso(Long curso) {
+		this.curso = curso;
+	}
+	public Double getValor() {
+		return valor;
+	}
+	public void setValor(Double valor) {
+		this.valor = valor;
+	}
 	public String getNome() {
 		return nome;
 	}
